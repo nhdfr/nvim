@@ -33,7 +33,6 @@ return {
 				nvim_cmp = true,
 				min_chars = 2,
 			},
-			-- I want to set conceallevel to 0 so that I can see the markdown syntax
 			ui = {
 				enable = false,
 				checkboxes = {},

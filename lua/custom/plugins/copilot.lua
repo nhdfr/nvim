@@ -1,12 +1,10 @@
 return {
 	{
 		"github/copilot.vim",
-		lazy = false, -- Load immediately
+		lazy = false,
 		config = function()
-			-- Disable Copilot by default (optional)
 			vim.g.copilot_enabled = 1
 
-			-- Suggested keybindings
 			vim.keymap.set(
 				"i",
 				"<C-j>",
@@ -17,7 +15,6 @@ return {
 			vim.keymap.set("i", "<C-l>", "<Plug>(copilot-next)", { silent = true })
 			vim.keymap.set("i", "<C-h>", "<Plug>(copilot-previous)", { silent = true })
 
-			-- Set Copilot filetypes (optional)
 			vim.g.copilot_filetypes = {
 				markdown = true,
 				txt = false,
@@ -29,10 +26,10 @@ return {
 				javascriptreact = false,
 				typescriptreact = false,
 				html = false,
-				css = true,
+				css = false,
 				sh = false,
 				go = false,
-                yaml = false
+				yaml = false,
 			}
 		end,
 	},

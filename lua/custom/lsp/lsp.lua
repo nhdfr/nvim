@@ -118,13 +118,20 @@ return {
 				"html",
 				"typescriptreact",
 				"javascriptreact",
-				"css",
+				-- "css",
 				"sass",
 			},
 		})
 
 		lspconfig.gopls.setup({
 			capabilities = capabilities,
+		})
+
+		lspconfig.cssls.setup({
+			capabilities = capabilities,
+			filetypes = {
+				"css",
+			},
 		})
 
 		lspconfig.tailwindcss.setup({
@@ -181,7 +188,6 @@ return {
 				},
 			},
 		})
-
 
 		lspconfig.ts_ls.setup({
 			capabilities = capabilities,

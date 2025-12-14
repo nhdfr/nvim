@@ -17,12 +17,12 @@ vim.opt.wrap = false
 vim.opt.linebreak = false
 vim.opt.breakindent = false
 
--- setting up spell check
+-- spell check
 -- vim.opt.spell = true
 
 vim.opt.swapfile = false
 vim.opt.backup = false
-vim.opt.undodir = os.getenv("HOME") .. "/.vim/undodir"
+vim.opt.undodir = os.getenv("HOME") .. "/.config/.vim/undodir"
 vim.opt.undofile = true
 
 vim.opt.signcolumn = "yes:1"
